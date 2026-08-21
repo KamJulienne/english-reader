@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unit 5 点读 · 什么是生物</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:"PingFang SC","Microsoft YaHei",sans-serif; background:#f4f8fb; padding-bottom:60px; }
+  header { background:#e0566e; color:#fff; padding:20px 16px 24px; text-align:center; }
+  .back { display:inline-block; color:#fff; text-decoration:none; font-size:14px; opacity:.9; margin-bottom:6px; }
+  h1 { font-size:26px; letter-spacing:1px; }
+  .sub { font-size:13px; opacity:.92; margin-top:6px; }
+  .tip { font-size:13px; margin-top:10px; background:rgba(255,255,255,.22); display:inline-block; padding:4px 14px; border-radius:20px; }
+  main { max-width:860px; margin:0 auto; padding:16px; }
+  section { background:#fff; border-radius:18px; margin-top:16px; padding:16px; box-shadow:0 3px 10px rgba(0,0,0,.06); }
+  section h2 { font-size:20px; color:#333; display:flex; align-items:center; gap:8px; margin-bottom:6px; }
+  .badge { font-size:12px; color:#999; font-weight:normal; }
+  .bookpage { position:relative; width:100%; margin-top:12px; border-radius:10px; overflow:hidden; background:#eee; }
+  .pageimg { display:block; width:100%; height:auto; }
+  .hotlayer { position:absolute; inset:0; }
+  .hot { position:absolute; border-radius:4px; cursor:pointer; background:transparent; transition:background .12s; }
+  .hot:hover { background:rgba(255,193,7,.32); box-shadow:inset 0 0 0 2px rgba(255,140,0,.65); }
+  .hot.playing { background:rgba(255,140,0,.40); box-shadow:inset 0 0 0 2px #e0566e; }
+  .pagetip { font-size:13px; color:#999; text-align:center; margin-top:12px; }
+  .words { display:flex; flex-wrap:wrap; gap:10px; margin-top:12px; }
+  .word { padding:12px 18px; border-radius:14px; background:#f7f9fc; font-size:17px; color:#222; cursor:pointer; border:2px solid transparent; transition:all .12s; user-select:none; }
+  .word:active { transform:scale(.96); }
+  .word.playing { background:#e0566e; border-color:#e0566e; color:#fff; }
+  .empty { color:#999; font-size:15px; padding:10px 4px; }
+  .home { display:block; text-align:center; margin:24px auto 0; color:#666; text-decoration:none; font-size:15px; }
+</style>
+</head>
+<body>
+<header>
+  <a class="back" href="index.html">← 返回主页</a>
+  <h1>Unit 5 · 什么是生物</h1>
+  <div class="sub">What are living things?</div>
+  <div class="tip">点书页上的句子，听这一句的发音</div>
+</header>
+<main>
+<section><h2>课文 Explore <span class="badge">主课文朗读</span></h2>
+
+    <div class="bookpage" data-color="#e0566e">
+      <img class="pageimg" src="pages/page_054.png" alt="第54页" loading="lazy">
+      <div class="hotlayer"><div class="hot" data-src="audio/unit5/explore/explore_001.mp3" data-g="g1" style="left:30.63%;top:24.76%;width:40.01%;height:3.03%;" title="We see many things in our world every day."></div><div class="hot" data-src="audio/unit5/explore/explore_001.mp3" data-g="g1" style="left:30.15%;top:27.54%;width:12.05%;height:3.03%;" title="We see many things in our world every day."></div><div class="hot" data-src="audio/unit5/explore/explore_002.mp3" data-g="g2" style="left:44.06%;top:27.54%;width:30.75%;height:3.03%;" title="All these things are living or non-living."></div><div class="hot" data-src="audio/unit5/explore/explore_002.mp3" data-g="g2" style="left:30.15%;top:30.11%;width:15.26%;height:3.24%;" title="All these things are living or non-living."></div><div class="hot" data-src="audio/unit5/explore/explore_003.mp3" data-g="g3" style="left:47.33%;top:30.11%;width:28.57%;height:3.24%;" title="How are they different?"></div><div class="hot" data-src="audio/unit5/explore/explore_004.mp3" data-g="g4" style="left:31.36%;top:35.63%;width:19.19%;height:5.08%;" title="Living things."></div><div class="hot" data-src="audio/unit5/explore/explore_005.mp3" data-g="g5" style="left:31.36%;top:40.04%;width:42.30%;height:3.24%;" title="A living thing can grow and change."></div><div class="hot" data-src="audio/unit5/explore/explore_006.mp3" data-g="g6" style="left:31.42%;top:43.59%;width:26.94%;height:3.02%;" title="A plant is a living thing."></div><div class="hot" data-src="audio/unit5/explore/explore_010.mp3" data-g="g7" style="left:31.54%;top:52.40%;width:36.43%;height:2.99%;" title="People and animals can move."></div><div class="hot" data-src="audio/unit5/explore/explore_013.mp3" data-g="g8" style="left:50.48%;top:60.53%;width:26.08%;height:3.07%;" title="They make their food from sunlight, water, and air."></div><div class="hot" data-src="audio/unit5/explore/explore_013.mp3" data-g="g8" style="left:31.42%;top:63.19%;width:35.22%;height:3.11%;" title="They make their food from sunlight, water, and air."></div><div class="hot" data-src="audio/unit5/explore/explore_014.mp3" data-g="g9" style="left:31.90%;top:66.78%;width:34.38%;height:2.98%;" title="What living things do you see every day?"></div><div class="hot" data-src="audio/unit5/explore/explore_014.mp3" data-g="g9" style="left:31.48%;top:69.35%;width:11.51%;height:3.28%;" title="What living things do you see every day?"></div><div class="hot" data-src="audio/unit5/explore/explore_007.mp3" data-g="g10" style="left:60.28%;top:43.59%;width:14.95%;height:3.02%;" title="An animal is a living thing."></div><div class="hot" data-src="audio/unit5/explore/explore_007.mp3" data-g="g10" style="left:31.36%;top:46.20%;width:15.26%;height:3.24%;" title="An animal is a living thing."></div><div class="hot" data-src="audio/unit5/explore/explore_008.mp3" data-g="g11" style="left:48.48%;top:46.20%;width:25.42%;height:3.24%;" title="You are a living thing."></div><div class="hot" data-src="audio/unit5/explore/explore_009.mp3" data-g="g12" style="left:31.48%;top:48.98%;width:45.02%;height:2.98%;" title="Living things need air, food, and water."></div><div class="hot" data-src="audio/unit5/explore/explore_011.mp3" data-g="g13" style="left:31.36%;top:55.06%;width:42.00%;height:3.11%;" title="They can get food and water from different places."></div><div class="hot" data-src="audio/unit5/explore/explore_011.mp3" data-g="g13" style="left:31.48%;top:57.79%;width:18.77%;height:2.99%;" title="They can get food and water from different places."></div><div class="hot" data-src="audio/unit5/explore/explore_012.mp3" data-g="g14" style="left:52.05%;top:57.79%;width:23.97%;height:2.99%;" title="Plants cannot move by themselves."></div><div class="hot" data-src="audio/unit5/explore/explore_012.mp3" data-g="g14" style="left:31.54%;top:60.53%;width:16.89%;height:3.07%;" title="Plants cannot move by themselves."></div><div class="hot" data-src="audio/unit5/extra/p54_001.mp3" data-g="e5_59" style="left:22.64%;top:4.90%;width:15.13%;height:4.13%;" title="Explore"></div><div class="hot" data-src="audio/unit5/extra/p54_002.mp3" data-g="e5_60" style="left:29.29%;top:7.89%;width:33.39%;height:14.40%;" title="Living"></div><div class="hot" data-src="audio/unit5/extra/p54_003.mp3" data-g="e5_61" style="left:60.72%;top:8.96%;width:19.06%;height:10.72%;" title="and"></div></div>
+    </div>
+
+    <div class="bookpage" data-color="#e0566e">
+      <img class="pageimg" src="pages/page_055.png" alt="第55页" loading="lazy">
+      <div class="hotlayer"><div class="hot" data-src="audio/unit5/explore/explore_015.mp3" data-g="g15" style="left:30.88%;top:22.02%;width:25.30%;height:4.65%;" title="Non-living things."></div><div class="hot" data-src="audio/unit5/explore/explore_016.mp3" data-g="g16" style="left:30.21%;top:27.20%;width:42.54%;height:3.07%;" title="A non-living thing does not need air, food, or water."></div><div class="hot" data-src="audio/unit5/explore/explore_016.mp3" data-g="g16" style="left:30.21%;top:29.81%;width:16.05%;height:3.24%;" title="A non-living thing does not need air, food, or water."></div><div class="hot" data-src="audio/unit5/explore/explore_017.mp3" data-g="g17" style="left:47.69%;top:29.81%;width:29.72%;height:3.24%;" title="A toy is a non-living thing."></div><div class="hot" data-src="audio/unit5/explore/explore_018.mp3" data-g="g18" style="left:30.27%;top:33.53%;width:46.54%;height:3.11%;" title="A non-living thing does not grow, but it can change."></div><div class="hot" data-src="audio/unit5/explore/explore_018.mp3" data-g="g18" style="left:29.73%;top:36.27%;width:16.77%;height:2.98%;" title="A non-living thing does not grow, but it can change."></div><div class="hot" data-src="audio/unit5/explore/explore_019.mp3" data-g="g19" style="left:48.30%;top:36.27%;width:21.43%;height:2.98%;" title="Look at the shoes."></div><div class="hot" data-src="audio/unit5/explore/explore_020.mp3" data-g="g20" style="left:71.53%;top:36.27%;width:4.91%;height:2.98%;" title="How are they different?"></div><div class="hot" data-src="audio/unit5/explore/explore_020.mp3" data-g="g20" style="left:30.33%;top:39.01%;width:21.92%;height:2.98%;" title="How are they different?"></div><div class="hot" data-src="audio/unit5/explore/explore_021.mp3" data-g="g21" style="left:30.21%;top:57.20%;width:19.49%;height:3.06%;" title="A ball can move."></div><div class="hot" data-src="audio/unit5/explore/explore_022.mp3" data-g="g22" style="left:51.38%;top:57.20%;width:21.01%;height:3.06%;" title="Is it a living thing?"></div><div class="hot" data-src="audio/unit5/explore/explore_023.mp3" data-g="g23" style="left:30.21%;top:59.98%;width:12.42%;height:2.89%;" title="No, it isn't."></div><div class="hot" data-src="audio/unit5/explore/explore_024.mp3" data-g="g24" style="left:43.82%;top:59.98%;width:29.60%;height:2.89%;" title="It cannot move by itself."></div><div class="hot" data-src="audio/unit5/explore/explore_025.mp3" data-g="g25" style="left:29.73%;top:62.63%;width:20.40%;height:3.11%;" title="It does not grow."></div><div class="hot" data-src="audio/unit5/explore/explore_026.mp3" data-g="g26" style="left:52.05%;top:62.63%;width:20.95%;height:3.11%;" title="Look around you."></div><div class="hot" data-src="audio/unit5/explore/explore_027.mp3" data-g="g27" style="left:30.76%;top:65.24%;width:41.45%;height:3.32%;" title="What non-living things do you see?"></div><div class="hot" data-src="audio/unit5/explore/explore_028.mp3" data-g="g28" style="left:29.97%;top:72.81%;width:43.93%;height:3.20%;" title="All living and non-living things in our world are important."></div><div class="hot" data-src="audio/unit5/explore/explore_028.mp3" data-g="g28" style="left:30.39%;top:75.59%;width:23.97%;height:2.90%;" title="All living and non-living things in our world are important."></div><div class="hot" data-src="audio/unit5/explore/explore_029.mp3" data-g="g29" style="left:56.10%;top:75.59%;width:17.80%;height:2.90%;" title="We should take care of them."></div><div class="hot" data-src="audio/unit5/explore/explore_029.mp3" data-g="g29" style="left:29.97%;top:78.29%;width:14.41%;height:2.73%;" title="We should take care of them."></div><div class="hot" data-src="audio/unit5/extra/p55_001.mp3" data-g="e5_62" style="left:21.67%;top:16.27%;width:20.93%;height:3.84%;" title="Non-living things"></div><div class="hot" data-src="audio/unit5/extra/p55_002.mp3" data-g="e5_63" style="left:30.49%;top:66.77%;width:6.42%;height:1.87%;" title="water"></div><div class="hot" data-src="audio/unit5/extra/p55_003.mp3" data-g="e5_64" style="left:38.78%;top:66.51%;width:26.56%;height:2.25%;" title="How are living and non-living"></div><div class="hot" data-src="audio/unit5/extra/p55_004.mp3" data-g="e5_65" style="left:30.74%;top:68.13%;width:6.00%;height:2.13%;" title="what"></div><div class="hot" data-src="audio/unit5/extra/p55_005.mp3" data-g="e5_66" style="left:38.78%;top:68.09%;width:15.43%;height:2.21%;" title="things different"></div></div>
+    </div>
+<div class="pagetip">点一下书页上的句子，就能听到这一句的发音</div>
+</section>
+<section><h2>拓展 Extend <span class="badge">拓展阅读朗读</span></h2>
+
+    <div class="bookpage" data-color="#e0566e">
+      <img class="pageimg" src="pages/page_060.png" alt="第60页" loading="lazy">
+      <div class="hotlayer"><div class="hot" data-src="audio/unit5/extend/extend_001.mp3" data-g="g1" style="left:51.02%;top:17.96%;width:33.23%;height:2.81%;" title="Some living things can become non-living things."></div><div class="hot" data-src="audio/unit5/extend/extend_001.mp3" data-g="g1" style="left:50.96%;top:20.70%;width:17.50%;height:2.81%;" title="Some living things can become non-living things."></div><div class="hot" data-src="audio/unit5/extend/extend_002.mp3" data-g="g2" style="left:69.53%;top:20.70%;width:12.24%;height:2.81%;" title="Is the boy's straw hat from a living thing?"></div><div class="hot" data-src="audio/unit5/extend/extend_002.mp3" data-g="g2" style="left:50.90%;top:23.31%;width:29.84%;height:2.89%;" title="Is the boy's straw hat from a living thing?"></div><div class="hot" data-src="audio/unit5/extend/extend_003.mp3" data-g="g3" style="left:13.88%;top:41.79%;width:24.94%;height:2.81%;" title="Wheat grows in fields."></div><div class="hot" data-src="audio/unit5/extend/extend_004.mp3" data-g="g4" style="left:13.51%;top:54.20%;width:26.27%;height:2.60%;" title="Farmers cut the wheat."></div><div class="hot" data-src="audio/unit5/extend/extend_005.mp3" data-g="g5" style="left:13.03%;top:65.20%;width:19.80%;height:2.68%;" title="It becomes straw."></div><div class="hot" data-src="audio/unit5/extend/extend_006.mp3" data-g="g6" style="left:13.45%;top:67.85%;width:26.57%;height:2.81%;" title="The sun dries the straw."></div><div class="hot" data-src="audio/unit5/extend/extend_007.mp3" data-g="g7" style="left:13.57%;top:77.43%;width:32.81%;height:2.82%;" title="People can make a hat with the straw."></div><div class="hot" data-src="audio/unit5/extend/extend_007.mp3" data-g="g7" style="left:13.33%;top:80.09%;width:10.72%;height:2.81%;" title="People can make a hat with the straw."></div><div class="hot" data-src="audio/unit5/extend/extend_008.mp3" data-g="g8" style="left:7.10%;top:86.04%;width:34.32%;height:2.72%;" title="Straw begins as a living thing."></div><div class="hot" data-src="audio/unit5/extend/extend_009.mp3" data-g="g9" style="left:43.58%;top:86.04%;width:6.73%;height:2.72%;" title="Wheat."></div><div class="hot" data-src="audio/unit5/extend/extend_010.mp3" data-g="g10" style="left:51.99%;top:86.04%;width:29.41%;height:2.72%;" title="People make it into a hat."></div><div class="hot" data-src="audio/unit5/extend/extend_011.mp3" data-g="g11" style="left:83.02%;top:86.04%;width:3.77%;height:2.72%;" title="The wheat becomes a non-living thing."></div><div class="hot" data-src="audio/unit5/extend/extend_011.mp3" data-g="g11" style="left:7.59%;top:88.69%;width:39.57%;height:2.94%;" title="The wheat becomes a non-living thing."></div><div class="hot" data-src="audio/unit5/extra/p60_001.mp3" data-g="e5_67" style="left:22.09%;top:4.99%;width:15.37%;height:3.62%;" title="Extend"></div><div class="hot" data-src="audio/unit5/extra/p60_002.mp3" data-g="e5_68" style="left:28.92%;top:9.09%;width:59.99%;height:6.79%;" title="Living to non-living"></div></div>
+    </div>
+
+    <div class="bookpage" data-color="#e0566e">
+      <img class="pageimg" src="pages/page_061.png" alt="第61页" loading="lazy">
+      <div class="hotlayer"><div class="hot" data-src="audio/unit5/extend/extend_012.mp3" data-g="g12" style="left:18.41%;top:19.07%;width:37.95%;height:2.51%;" title="Grandma Li has a bamboo steamer."></div><div class="hot" data-src="audio/unit5/extend/extend_013.mp3" data-g="g13" style="left:17.93%;top:21.77%;width:22.82%;height:2.55%;" title="She makes baozi in it."></div><div class="hot" data-src="audio/unit5/extend/extend_014.mp3" data-g="g14" style="left:42.01%;top:21.77%;width:12.41%;height:2.55%;" title="How can we make a steamer?"></div><div class="hot" data-src="audio/unit5/extend/extend_014.mp3" data-g="g14" style="left:18.35%;top:24.46%;width:17.02%;height:2.56%;" title="How can we make a steamer?"></div><div class="hot" data-src="audio/unit5/extend/extend_015.mp3" data-g="g15" style="left:51.87%;top:41.28%;width:32.32%;height:3.15%;" title="Bamboo can grow very tall."></div><div class="hot" data-src="audio/unit5/extend/extend_016.mp3" data-g="g16" style="left:51.93%;top:53.39%;width:34.68%;height:2.77%;" title="People cut down the bamboo."></div><div class="hot" data-src="audio/unit5/extend/extend_017.mp3" data-g="g17" style="left:51.99%;top:65.80%;width:40.42%;height:2.98%;" title="People cut the bamboo into pieces."></div><div class="hot" data-src="audio/unit5/extend/extend_018.mp3" data-g="g18" style="left:51.93%;top:76.79%;width:28.69%;height:2.73%;" title="People turn the bamboo pieces into a steamer."></div><div class="hot" data-src="audio/unit5/extend/extend_018.mp3" data-g="g18" style="left:51.99%;top:79.49%;width:24.57%;height:2.81%;" title="People turn the bamboo pieces into a steamer."></div><div class="hot" data-src="audio/unit5/extend/extend_019.mp3" data-g="g19" style="left:9.34%;top:85.91%;width:38.67%;height:2.85%;" title="Bamboo begins as a living thing."></div><div class="hot" data-src="audio/unit5/extend/extend_020.mp3" data-g="g20" style="left:49.75%;top:85.91%;width:39.16%;height:2.85%;" title="People make a steamer with the bamboo pieces."></div><div class="hot" data-src="audio/unit5/extend/extend_020.mp3" data-g="g20" style="left:9.46%;top:88.60%;width:17.98%;height:2.94%;" title="People make a steamer with the bamboo pieces."></div><div class="hot" data-src="audio/unit5/extend/extend_021.mp3" data-g="g21" style="left:29.18%;top:88.60%;width:48.78%;height:2.94%;" title="The bamboo becomes a non-living thing."></div></div>
+    </div>
+<div class="pagetip">点一下书页上的句子，就能听到这一句的发音</div>
+</section>
+<section><h2>单词 Words <span class="badge">点单词听发音</span></h2><div class="words">
+<div class="word" data-src="audio/unit5/words/words_001.mp3">Get sunlight.</div>
+<div class="word" data-src="audio/unit5/words/words_002.mp3">Get food and water.</div>
+<div class="word" data-src="audio/unit5/words/words_003.mp3">Grow.</div>
+<div class="word" data-src="audio/unit5/words/words_004.mp3">Change.</div>
+<div class="word" data-src="audio/unit5/words/words_005.mp3">Move.</div>
+<div class="word" data-src="audio/unit5/words/words_006.mp3">Living.</div>
+<div class="word" data-src="audio/unit5/words/words_007.mp3">Non-living.</div>
+<div class="word" data-src="audio/unit5/words/words_008.mp3">Thing.</div>
+<div class="word" data-src="audio/unit5/words/words_009.mp3">Air.</div>
+<div class="word" data-src="audio/unit5/words/words_010.mp3">By themselves.</div>
+<div class="word" data-src="audio/unit5/words/words_011.mp3">Important.</div>
+<div class="word" data-src="audio/unit5/words/words_012.mp3">By itself.</div>
+<div class="word" data-src="audio/unit5/words/words_013.mp3">Look around.</div>
+</div></section>
+  <a class="home" href="index.html">← 返回主页</a>
+</main>
+<script>
+var audio = new Audio();
+var currentGroup = null;
+function unlight(g) {
+  document.querySelectorAll('.hot[data-g="'+g+'"]').forEach(function(x){ x.classList.remove('playing'); });
+}
+function light(g) {
+  document.querySelectorAll('.hot[data-g="'+g+'"]').forEach(function(x){ x.classList.add('playing'); });
+}
+function play(el, src, g) {
+  if (currentGroup === g && !audio.paused) {
+    audio.pause();
+    unlight(g);
+    currentGroup = null;
+    return;
+  }
+  if (currentGroup) unlight(currentGroup);
+  currentGroup = g;
+  audio.src = src;
+  audio.play();
+  light(g);
+}
+audio.addEventListener('ended', function(){
+  if (currentGroup) { unlight(currentGroup); currentGroup = null; }
+});
+document.querySelectorAll('.hot').forEach(function(el){
+  el.addEventListener('click', function(){ play(this, this.dataset.src, this.dataset.g); });
+});
+document.querySelectorAll('.word').forEach(function(el){
+  el.addEventListener('click', function(){ play(this, this.dataset.src, this.dataset.g); });
+});
+</script>
+</body>
+</html>

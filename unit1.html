@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unit 1 点读 · 周末做什么</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:"PingFang SC","Microsoft YaHei",sans-serif; background:#f4f8fb; padding-bottom:60px; }
+  header { background:#ff8c42; color:#fff; padding:20px 16px 24px; text-align:center; }
+  .back { display:inline-block; color:#fff; text-decoration:none; font-size:14px; opacity:.9; margin-bottom:6px; }
+  h1 { font-size:26px; letter-spacing:1px; }
+  .sub { font-size:13px; opacity:.92; margin-top:6px; }
+  .tip { font-size:13px; margin-top:10px; background:rgba(255,255,255,.22); display:inline-block; padding:4px 14px; border-radius:20px; }
+  main { max-width:860px; margin:0 auto; padding:16px; }
+  section { background:#fff; border-radius:18px; margin-top:16px; padding:16px; box-shadow:0 3px 10px rgba(0,0,0,.06); }
+  section h2 { font-size:20px; color:#333; display:flex; align-items:center; gap:8px; margin-bottom:6px; }
+  .badge { font-size:12px; color:#999; font-weight:normal; }
+  .bookpage { position:relative; width:100%; margin-top:12px; border-radius:10px; overflow:hidden; background:#eee; }
+  .pageimg { display:block; width:100%; height:auto; }
+  .hotlayer { position:absolute; inset:0; }
+  .hot { position:absolute; border-radius:4px; cursor:pointer; background:transparent; transition:background .12s; }
+  .hot:hover { background:rgba(255,193,7,.32); box-shadow:inset 0 0 0 2px rgba(255,140,0,.65); }
+  .hot.playing { background:rgba(255,140,0,.40); box-shadow:inset 0 0 0 2px #ff8c42; }
+  .pagetip { font-size:13px; color:#999; text-align:center; margin-top:12px; }
+  .words { display:flex; flex-wrap:wrap; gap:10px; margin-top:12px; }
+  .word { padding:12px 18px; border-radius:14px; background:#f7f9fc; font-size:17px; color:#222; cursor:pointer; border:2px solid transparent; transition:all .12s; user-select:none; }
+  .word:active { transform:scale(.96); }
+  .word.playing { background:#ff8c42; border-color:#ff8c42; color:#fff; }
+  .empty { color:#999; font-size:15px; padding:10px 4px; }
+  .home { display:block; text-align:center; margin:24px auto 0; color:#666; text-decoration:none; font-size:15px; }
+</style>
+</head>
+<body>
+<header>
+  <a class="back" href="index.html">← 返回主页</a>
+  <h1>Unit 1 · 周末做什么</h1>
+  <div class="sub">What do we do at the weekend?</div>
+  <div class="tip">点书页上的句子，听这一句的发音</div>
+</header>
+<main>
+<section><h2>课文 Explore <span class="badge">主课文朗读</span></h2>
+
+    <div class="bookpage" data-color="#ff8c42">
+      <img class="pageimg" src="pages/page_006.png" alt="第6页" loading="lazy">
+      <div class="hotlayer"><div class="hot" data-src="audio/unit1/explore/explore_002.mp3" data-g="g1" style="left:14.78%;top:20.95%;width:39.88%;height:2.98%;" title="People do fun activities at the weekend."></div><div class="hot" data-src="audio/unit1/explore/explore_003.mp3" data-g="g2" style="left:56.41%;top:20.95%;width:32.68%;height:2.98%;" title="What are these children going to do this weekend?"></div><div class="hot" data-src="audio/unit1/explore/explore_003.mp3" data-g="g2" style="left:14.66%;top:23.78%;width:16.53%;height:2.55%;" title="What are these children going to do this weekend?"></div><div class="hot" data-src="audio/unit1/explore/explore_004.mp3" data-g="g3" style="left:12.73%;top:34.17%;width:28.87%;height:3.03%;" title="This weekend I'm going to go jogging with my family at the park."></div><div class="hot" data-src="audio/unit1/explore/explore_004.mp3" data-g="g3" style="left:12.24%;top:37.77%;width:29.12%;height:2.77%;" title="This weekend I'm going to go jogging with my family at the park."></div><div class="hot" data-src="audio/unit1/explore/explore_004.mp3" data-g="g3" style="left:11.15%;top:41.02%;width:6.25%;height:3.24%;" title="This weekend I'm going to go jogging with my family at the park."></div><div class="hot" data-src="audio/unit1/explore/explore_005.mp3" data-g="g4" style="left:18.78%;top:41.02%;width:24.15%;height:3.24%;" title="We must get up early on Sunday morning and warm up."></div><div class="hot" data-src="audio/unit1/explore/explore_005.mp3" data-g="g4" style="left:11.64%;top:44.44%;width:31.17%;height:3.11%;" title="We must get up early on Sunday morning and warm up."></div><div class="hot" data-src="audio/unit1/explore/explore_006.mp3" data-g="g5" style="left:12.18%;top:47.91%;width:19.13%;height:2.73%;" title="It's going to be fun."></div><div class="hot" data-src="audio/unit1/explore/explore_007.mp3" data-g="g6" style="left:58.89%;top:65.92%;width:30.08%;height:2.69%;" title="This weekend my dad and I are going to go fishing at Blue Lake."></div><div class="hot" data-src="audio/unit1/explore/explore_007.mp3" data-g="g6" style="left:59.19%;top:69.35%;width:30.80%;height:2.68%;" title="This weekend my dad and I are going to go fishing at Blue Lake."></div><div class="hot" data-src="audio/unit1/explore/explore_008.mp3" data-g="g7" style="left:58.46%;top:73.11%;width:30.20%;height:2.47%;" title="I can't wait to catch more fish than my dad."></div><div class="hot" data-src="audio/unit1/explore/explore_008.mp3" data-g="g7" style="left:58.89%;top:76.75%;width:12.59%;height:2.64%;" title="I can't wait to catch more fish than my dad."></div><div class="hot" data-src="audio/unit1/extra/p06_001.mp3" data-g="e1_0" style="left:4.32%;top:2.17%;width:4.73%;height:3.28%;" title="Unit"></div><div class="hot" data-src="audio/unit1/extra/p06_002.mp3" data-g="e1_1" style="left:22.51%;top:4.52%;width:15.13%;height:4.13%;" title="Explore"></div><div class="hot" data-src="audio/unit1/extra/p06_003.mp3" data-g="e1_2" style="left:58.67%;top:51.50%;width:8.30%;height:3.11%;" title="Li Sha"></div><div class="hot" data-src="audio/unit1/extra/p06_004.mp3" data-g="e1_3" style="left:19.01%;top:83.35%;width:9.32%;height:2.85%;" title="Luo Jie"></div></div>
+    </div>
+
+    <div class="bookpage" data-color="#ff8c42">
+      <img class="pageimg" src="pages/page_007.png" alt="第7页" loading="lazy">
+      <div class="hotlayer"><div class="hot" data-src="audio/unit1/explore/explore_001.mp3" data-g="g8" style="left:56.71%;top:76.62%;width:16.71%;height:2.73%;" title="Weekend plans."></div><div class="hot" data-src="audio/unit1/explore/explore_009.mp3" data-g="g9" style="left:14.06%;top:23.95%;width:25.00%;height:2.98%;" title="I'm going to have a picnic with my family this weekend."></div><div class="hot" data-src="audio/unit1/explore/explore_009.mp3" data-g="g9" style="left:14.97%;top:27.16%;width:18.52%;height:2.68%;" title="I'm going to have a picnic with my family this weekend."></div><div class="hot" data-src="audio/unit1/explore/explore_009.mp3" data-g="g9" style="left:14.97%;top:30.37%;width:8.06%;height:2.81%;" title="I'm going to have a picnic with my family this weekend."></div><div class="hot" data-src="audio/unit1/explore/explore_010.mp3" data-g="g10" style="left:24.46%;top:30.37%;width:11.69%;height:2.81%;" title="We can fly a kite in the park."></div><div class="hot" data-src="audio/unit1/explore/explore_010.mp3" data-g="g10" style="left:14.54%;top:33.45%;width:15.14%;height:3.06%;" title="We can fly a kite in the park."></div><div class="hot" data-src="audio/unit1/explore/explore_011.mp3" data-g="g11" style="left:30.82%;top:33.45%;width:9.20%;height:3.06%;" title="Hurry up Saturday."></div><div class="hot" data-src="audio/unit1/explore/explore_011.mp3" data-g="g11" style="left:14.48%;top:36.57%;width:9.69%;height:2.90%;" title="Hurry up Saturday."></div><div class="hot" data-src="audio/unit1/extra/p07_001.mp3" data-g="e1_4" style="left:67.68%;top:42.78%;width:12.95%;height:3.02%;" title="Fang Xiao"></div><div class="hot" data-src="audio/unit1/extra/p07_002.mp3" data-g="e1_5" style="left:16.23%;top:61.89%;width:41.49%;height:2.94%;" title="Do you have any plans for the weekend"></div><div class="hot" data-src="audio/unit1/extra/p07_003.mp3" data-g="e1_6" style="left:24.51%;top:74.38%;width:13.19%;height:2.64%;" title="can catch"></div><div class="hot" data-src="audio/unit1/extra/p07_004.mp3" data-g="e1_7" style="left:55.34%;top:74.42%;width:29.82%;height:2.51%;" title="What are these children's"></div><div class="hot" data-src="audio/unit1/extra/p07_005.mp3" data-g="e1_8" style="left:26.38%;top:76.56%;width:9.51%;height:2.81%;" title="go jog"></div><div class="hot" data-src="audio/unit1/extra/p07_006.mp3" data-g="e1_9" style="left:55.34%;top:76.56%;width:19.54%;height:2.72%;" title="weekend plans"></div></div>
+    </div>
+<div class="pagetip">点一下书页上的句子，就能听到这一句的发音</div>
+</section>
+<section><h2>拓展 Extend <span class="badge">拓展阅读朗读</span></h2>
+
+    <div class="bookpage" data-color="#ff8c42">
+      <img class="pageimg" src="pages/page_012.png" alt="第12页" loading="lazy">
+      <div class="hotlayer"><div class="hot" data-src="audio/unit1/extend/extend_001.mp3" data-g="g1" style="left:50.11%;top:38.88%;width:24.22%;height:3.24%;" title="Today is a busy day."></div><div class="hot" data-src="audio/unit1/extend/extend_002.mp3" data-g="g2" style="left:76.79%;top:38.88%;width:6.25%;height:3.24%;" title="We're all going to do chores."></div><div class="hot" data-src="audio/unit1/extend/extend_002.mp3" data-g="g2" style="left:50.42%;top:41.41%;width:25.96%;height:3.11%;" title="We're all going to do chores."></div><div class="hot" data-src="audio/unit1/extend/extend_003.mp3" data-g="g3" style="left:40.83%;top:44.66%;width:41.61%;height:12.47%;" title="You're going to wash the dishes  You're going to dust the shelves I'm going to clean the windows and I'm gonna wash the plants and walk the dog Why are you using a newspaper mom?"></div><div class="hot" data-src="audio/unit1/extend/extend_004.mp3" data-g="g4" style="left:14.71%;top:74.33%;width:40.22%;height:8.67%;" title="It makes the window shiny and clean That's amazing."></div><div class="hot" data-src="audio/unit1/extra/p12_001.mp3" data-g="e1_10" style="left:22.27%;top:4.69%;width:14.95%;height:3.49%;" title="Extend"></div><div class="hot" data-src="audio/unit1/extra/p12_002.mp3" data-g="e1_11" style="left:51.11%;top:9.82%;width:27.10%;height:7.47%;" title="Sunday"></div><div class="hot" data-src="audio/unit1/extra/p12_003.mp3" data-g="e1_12" style="left:35.39%;top:10.07%;width:18.64%;height:6.87%;" title="busy"></div></div>
+    </div>
+
+    <div class="bookpage" data-color="#ff8c42">
+      <img class="pageimg" src="pages/page_013.png" alt="第13页" loading="lazy">
+      <div class="hotlayer"><div class="hot" data-src="audio/unit1/extend/extend_005.mp3" data-g="g5" style="left:11.27%;top:7.94%;width:77.76%;height:11.78%;" title="I can't do this the dust is going everywhere  use this Thanks dad dad when does a plant need water you must feel the soil does it feel dry Then it needs water now wears the lead look dad clever dog"></div></div>
+    </div>
+<div class="pagetip">点一下书页上的句子，就能听到这一句的发音</div>
+</section>
+<section><h2>单词 Words <span class="badge">点单词听发音</span></h2><div class="words">
+<div class="word" data-src="audio/unit1/words/words_001.mp3">Go jogging.</div>
+<div class="word" data-src="audio/unit1/words/words_002.mp3">Go fishing.</div>
+<div class="word" data-src="audio/unit1/words/words_003.mp3">Do chores.</div>
+<div class="word" data-src="audio/unit1/words/words_004.mp3">Watch TV.</div>
+<div class="word" data-src="audio/unit1/words/words_005.mp3">Play with friends.</div>
+<div class="word" data-src="audio/unit1/words/words_006.mp3">Have a picnic.</div>
+<div class="word" data-src="audio/unit1/words/words_007.mp3">Busy.</div>
+<div class="word" data-src="audio/unit1/words/words_008.mp3">Weekend.</div>
+<div class="word" data-src="audio/unit1/words/words_009.mp3">Plan.</div>
+<div class="word" data-src="audio/unit1/words/words_010.mp3">Early.</div>
+<div class="word" data-src="audio/unit1/words/words_011.mp3">Catch.</div>
+<div class="word" data-src="audio/unit1/words/words_012.mp3">Any.</div>
+<div class="word" data-src="audio/unit1/words/words_013.mp3">Robot.</div>
+<div class="word" data-src="audio/unit1/words/words_014.mp3">Sock.</div>
+<div class="word" data-src="audio/unit1/words/words_015.mp3">Sweep.</div>
+<div class="word" data-src="audio/unit1/words/words_016.mp3">Warm up.</div>
+<div class="word" data-src="audio/unit1/words/words_017.mp3">More than.</div>
+</div></section>
+  <a class="home" href="index.html">← 返回主页</a>
+</main>
+<script>
+var audio = new Audio();
+var currentGroup = null;
+function unlight(g) {
+  document.querySelectorAll('.hot[data-g="'+g+'"]').forEach(function(x){ x.classList.remove('playing'); });
+}
+function light(g) {
+  document.querySelectorAll('.hot[data-g="'+g+'"]').forEach(function(x){ x.classList.add('playing'); });
+}
+function play(el, src, g) {
+  if (currentGroup === g && !audio.paused) {
+    audio.pause();
+    unlight(g);
+    currentGroup = null;
+    return;
+  }
+  if (currentGroup) unlight(currentGroup);
+  currentGroup = g;
+  audio.src = src;
+  audio.play();
+  light(g);
+}
+audio.addEventListener('ended', function(){
+  if (currentGroup) { unlight(currentGroup); currentGroup = null; }
+});
+document.querySelectorAll('.hot').forEach(function(el){
+  el.addEventListener('click', function(){ play(this, this.dataset.src, this.dataset.g); });
+});
+document.querySelectorAll('.word').forEach(function(el){
+  el.addEventListener('click', function(){ play(this, this.dataset.src, this.dataset.g); });
+});
+</script>
+</body>
+</html>

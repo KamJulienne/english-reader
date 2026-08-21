@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unit 2 点读 · 怎样保持健康</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:"PingFang SC","Microsoft YaHei",sans-serif; background:#f4f8fb; padding-bottom:60px; }
+  header { background:#2eae6e; color:#fff; padding:20px 16px 24px; text-align:center; }
+  .back { display:inline-block; color:#fff; text-decoration:none; font-size:14px; opacity:.9; margin-bottom:6px; }
+  h1 { font-size:26px; letter-spacing:1px; }
+  .sub { font-size:13px; opacity:.92; margin-top:6px; }
+  .tip { font-size:13px; margin-top:10px; background:rgba(255,255,255,.22); display:inline-block; padding:4px 14px; border-radius:20px; }
+  main { max-width:860px; margin:0 auto; padding:16px; }
+  section { background:#fff; border-radius:18px; margin-top:16px; padding:16px; box-shadow:0 3px 10px rgba(0,0,0,.06); }
+  section h2 { font-size:20px; color:#333; display:flex; align-items:center; gap:8px; margin-bottom:6px; }
+  .badge { font-size:12px; color:#999; font-weight:normal; }
+  .bookpage { position:relative; width:100%; margin-top:12px; border-radius:10px; overflow:hidden; background:#eee; }
+  .pageimg { display:block; width:100%; height:auto; }
+  .hotlayer { position:absolute; inset:0; }
+  .hot { position:absolute; border-radius:4px; cursor:pointer; background:transparent; transition:background .12s; }
+  .hot:hover { background:rgba(255,193,7,.32); box-shadow:inset 0 0 0 2px rgba(255,140,0,.65); }
+  .hot.playing { background:rgba(255,140,0,.40); box-shadow:inset 0 0 0 2px #2eae6e; }
+  .pagetip { font-size:13px; color:#999; text-align:center; margin-top:12px; }
+  .words { display:flex; flex-wrap:wrap; gap:10px; margin-top:12px; }
+  .word { padding:12px 18px; border-radius:14px; background:#f7f9fc; font-size:17px; color:#222; cursor:pointer; border:2px solid transparent; transition:all .12s; user-select:none; }
+  .word:active { transform:scale(.96); }
+  .word.playing { background:#2eae6e; border-color:#2eae6e; color:#fff; }
+  .empty { color:#999; font-size:15px; padding:10px 4px; }
+  .home { display:block; text-align:center; margin:24px auto 0; color:#666; text-decoration:none; font-size:15px; }
+</style>
+</head>
+<body>
+<header>
+  <a class="back" href="index.html">← 返回主页</a>
+  <h1>Unit 2 · 怎样保持健康</h1>
+  <div class="sub">How do we stay healthy?</div>
+  <div class="tip">点书页上的句子，听这一句的发音</div>
+</header>
+<main>
+<section><h2>课文 Explore <span class="badge">主课文朗读</span></h2>
+
+    <div class="bookpage" data-color="#2eae6e">
+      <img class="pageimg" src="pages/page_018.png" alt="第18页" loading="lazy">
+      <div class="hotlayer"><div class="hot" data-src="audio/unit2/explore/explore_001.mp3" data-g="g1" style="left:22.47%;top:19.03%;width:34.98%;height:3.06%;" title="Look at this poster, Xiaowen."></div><div class="hot" data-src="audio/unit2/explore/explore_002.mp3" data-g="g2" style="left:59.31%;top:19.03%;width:30.68%;height:3.06%;" title="It's about healthy habits."></div><div class="hot" data-src="audio/unit2/explore/explore_003.mp3" data-g="g3" style="left:22.53%;top:21.98%;width:16.53%;height:3.24%;" title="Cool, let's see."></div><div class="hot" data-src="audio/unit2/explore/explore_004.mp3" data-g="g4" style="left:40.86%;top:21.98%;width:50.59%;height:3.24%;" title="How much water do you drink every day, Tingting?"></div><div class="hot" data-src="audio/unit2/explore/explore_004.mp3" data-g="g4" style="left:22.41%;top:24.42%;width:10.36%;height:3.02%;" title="How much water do you drink every day, Tingting?"></div><div class="hot" data-src="audio/unit2/explore/explore_005.mp3" data-g="g5" style="left:22.23%;top:27.54%;width:28.99%;height:2.90%;" title="I drink very little water."></div><div class="hot" data-src="audio/unit2/explore/explore_006.mp3" data-g="g6" style="left:52.41%;top:27.54%;width:25.00%;height:2.90%;" title="I need to drink more."></div><div class="hot" data-src="audio/unit2/explore/explore_007.mp3" data-g="g7" style="left:23.13%;top:30.62%;width:8.06%;height:2.81%;" title="Me too."></div><div class="hot" data-src="audio/unit2/explore/explore_008.mp3" data-g="g8" style="left:22.71%;top:33.70%;width:44.78%;height:2.99%;" title="Xiaowen, we eat too much junk food."></div><div class="hot" data-src="audio/unit2/explore/explore_009.mp3" data-g="g9" style="left:70.38%;top:33.70%;width:19.13%;height:2.99%;" title="We must eat less."></div><div class="hot" data-src="audio/unit2/explore/explore_010.mp3" data-g="g10" style="left:22.35%;top:36.66%;width:34.07%;height:3.06%;" title="That's hard, but we can try."></div><div class="hot" data-src="audio/unit2/explore/explore_011.mp3" data-g="g11" style="left:22.41%;top:39.82%;width:34.43%;height:3.03%;" title="I think I get enough exercise."></div><div class="hot" data-src="audio/unit2/explore/explore_012.mp3" data-g="g12" style="left:58.70%;top:39.82%;width:21.62%;height:3.03%;" title="I do a lot of sport."></div><div class="hot" data-src="audio/unit2/explore/explore_013.mp3" data-g="g13" style="left:22.04%;top:42.90%;width:31.48%;height:2.90%;" title="I need to do more exercise."></div><div class="hot" data-src="audio/unit2/extra/p18_001.mp3" data-g="e2_13" style="left:4.38%;top:2.29%;width:4.91%;height:3.41%;" title="Unit"></div><div class="hot" data-src="audio/unit2/extra/p18_002.mp3" data-g="e2_14" style="left:22.57%;top:4.69%;width:15.25%;height:4.13%;" title="Explore"></div><div class="hot" data-src="audio/unit2/extra/p18_003.mp3" data-g="e2_15" style="left:36.42%;top:9.69%;width:23.65%;height:6.74%;" title="Healthy"></div><div class="hot" data-src="audio/unit2/extra/p18_004.mp3" data-g="e2_16" style="left:55.95%;top:8.96%;width:29.52%;height:8.50%;" title="or not"></div><div class="hot" data-src="audio/unit2/extra/p18_005.mp3" data-g="e2_17" style="left:45.49%;top:58.69%;width:21.78%;height:3.28%;" title="Healthy habits"></div><div class="hot" data-src="audio/unit2/extra/p18_006.mp3" data-g="e2_18" style="left:7.10%;top:72.45%;width:10.47%;height:3.41%;" title="Xiaowen"></div><div class="hot" data-src="audio/unit2/extra/p18_007.mp3" data-g="e2_19" style="left:27.53%;top:72.28%;width:18.09%;height:2.38%;" title="Drink a lot of water"></div><div class="hot" data-src="audio/unit2/extra/p18_008.mp3" data-g="e2_20" style="left:53.23%;top:72.07%;width:11.56%;height:2.30%;" title="Do exercise"></div><div class="hot" data-src="audio/unit2/extra/p18_009.mp3" data-g="e2_21" style="left:71.91%;top:72.84%;width:16.64%;height:2.64%;" title="Get enough sleep"></div><div class="hot" data-src="audio/unit2/extra/p18_010.mp3" data-g="e2_22" style="left:38.23%;top:83.95%;width:16.28%;height:2.42%;" title="Eat healthy food"></div><div class="hot" data-src="audio/unit2/extra/p18_011.mp3" data-g="e2_23" style="left:60.18%;top:83.95%;width:17.91%;height:2.42%;" title="Don't eat junk food"></div><div class="hot" data-src="audio/unit2/extra/p18_012.mp3" data-g="e2_24" style="left:36.60%;top:88.91%;width:10.29%;height:3.79%;" title="Tingting"></div></div>
+    </div>
+
+    <div class="bookpage" data-color="#2eae6e">
+      <img class="pageimg" src="pages/page_019.png" alt="第19页" loading="lazy">
+      <div class="hotlayer"><div class="hot" data-src="audio/unit2/explore/explore_014.mp3" data-g="g14" style="left:23.37%;top:23.22%;width:24.22%;height:2.98%;" title="Let's go to the park."></div><div class="hot" data-src="audio/unit2/explore/explore_015.mp3" data-g="g15" style="left:24.04%;top:26.09%;width:6.37%;height:3.15%;" title="Great."></div><div class="hot" data-src="audio/unit2/explore/explore_016.mp3" data-g="g16" style="left:33.18%;top:26.09%;width:28.08%;height:3.15%;" title="We can lie on the grass and enjoy the sun."></div><div class="hot" data-src="audio/unit2/explore/explore_016.mp3" data-g="g16" style="left:23.74%;top:28.65%;width:21.91%;height:2.99%;" title="We can lie on the grass and enjoy the sun."></div><div class="hot" data-src="audio/unit2/explore/explore_017.mp3" data-g="g17" style="left:24.28%;top:31.65%;width:10.42%;height:3.02%;" title="Uh, no."></div><div class="hot" data-src="audio/unit2/explore/explore_018.mp3" data-g="g18" style="left:37.11%;top:31.65%;width:25.96%;height:3.02%;" title="We're going for a run."></div><div class="hot" data-src="audio/unit2/explore/explore_019.mp3" data-g="g19" style="left:23.56%;top:43.59%;width:10.60%;height:3.07%;" title="I'm tired."></div><div class="hot" data-src="audio/unit2/explore/explore_020.mp3" data-g="g20" style="left:36.08%;top:43.59%;width:32.98%;height:3.07%;" title="I'm going home for dinner."></div><div class="hot" data-src="audio/unit2/explore/explore_021.mp3" data-g="g21" style="left:24.65%;top:46.63%;width:8.18%;height:3.36%;" title="Me too."></div><div class="hot" data-src="audio/unit2/explore/explore_022.mp3" data-g="g22" style="left:35.41%;top:46.63%;width:32.50%;height:3.36%;" title="What are you going to eat?"></div><div class="hot" data-src="audio/unit2/explore/explore_023.mp3" data-g="g23" style="left:23.68%;top:49.79%;width:44.42%;height:3.11%;" title="I'm going to eat some tomatoes and carrots with rice."></div><div class="hot" data-src="audio/unit2/explore/explore_023.mp3" data-g="g23" style="left:24.10%;top:52.36%;width:19.43%;height:2.55%;" title="I'm going to eat some tomatoes and carrots with rice."></div><div class="hot" data-src="audio/unit2/explore/explore_024.mp3" data-g="g24" style="left:24.58%;top:55.14%;width:12.54%;height:3.24%;" title="That's nice."></div><div class="hot" data-src="audio/unit2/explore/explore_025.mp3" data-g="g25" style="left:38.50%;top:55.14%;width:27.54%;height:3.24%;" title="I'm going to eat some healthy food too."></div><div class="hot" data-src="audio/unit2/explore/explore_025.mp3" data-g="g25" style="left:24.16%;top:57.54%;width:20.77%;height:2.98%;" title="I'm going to eat some healthy food too."></div><div class="hot" data-src="audio/unit2/extra/p19_001.mp3" data-g="e2_25" style="left:40.65%;top:63.69%;width:10.72%;height:2.77%;" title="healthy"></div><div class="hot" data-src="audio/unit2/extra/p19_002.mp3" data-g="e2_26" style="left:60.24%;top:63.43%;width:27.28%;height:2.85%;" title="What do the girls need"></div><div class="hot" data-src="audio/unit2/extra/p19_003.mp3" data-g="e2_27" style="left:42.59%;top:65.74%;width:6.97%;height:2.68%;" title="with"></div><div class="hot" data-src="audio/unit2/extra/p19_004.mp3" data-g="e2_28" style="left:60.18%;top:65.61%;width:26.92%;height:2.81%;" title="to do to stay healthy"></div></div>
+    </div>
+<div class="pagetip">点一下书页上的句子，就能听到这一句的发音</div>
+</section>
+<section><h2>拓展 Extend <span class="badge">拓展阅读朗读</span></h2>
+
+    <div class="bookpage" data-color="#2eae6e">
+      <img class="pageimg" src="pages/page_024.png" alt="第24页" loading="lazy">
+      <div class="hotlayer"><div class="hot" data-src="audio/unit2/extend/extend_001.mp3" data-g="g1" style="left:19.75%;top:32.21%;width:7.27%;height:2.46%;" title="I'm Jim."></div><div class="hot" data-src="audio/unit2/extend/extend_002.mp3" data-g="g2" style="left:29.06%;top:32.21%;width:12.17%;height:2.46%;" title="Look at me."></div><div class="hot" data-src="audio/unit2/extend/extend_003.mp3" data-g="g3" style="left:42.49%;top:32.21%;width:3.22%;height:2.46%;" title="I'm strong and healthy."></div><div class="hot" data-src="audio/unit2/extend/extend_003.mp3" data-g="g3" style="left:19.81%;top:34.52%;width:21.79%;height:2.72%;" title="I'm strong and healthy."></div><div class="hot" data-src="audio/unit2/extend/extend_004.mp3" data-g="g4" style="left:50.72%;top:33.10%;width:10.72%;height:2.56%;" title="I'm Matt."></div><div class="hot" data-src="audio/unit2/extend/extend_005.mp3" data-g="g5" style="left:62.33%;top:33.10%;width:13.99%;height:2.56%;" title="I like cheese."></div><div class="hot" data-src="audio/unit2/extend/extend_006.mp3" data-g="g6" style="left:77.58%;top:33.10%;width:5.34%;height:2.56%;" title="I like chocolate."></div><div class="hot" data-src="audio/unit2/extend/extend_006.mp3" data-g="g6" style="left:51.32%;top:35.42%;width:10.97%;height:2.59%;" title="I like chocolate."></div><div class="hot" data-src="audio/unit2/extend/extend_007.mp3" data-g="g7" style="left:9.64%;top:39.61%;width:52.71%;height:2.98%;" title="Jim and Matt live in a small hole in the wall."></div><div class="hot" data-src="audio/unit2/extend/extend_008.mp3" data-g="g8" style="left:63.06%;top:39.61%;width:19.31%;height:2.98%;" title="Jim eats healthy food and does some exercise every day."></div><div class="hot" data-src="audio/unit2/extend/extend_008.mp3" data-g="g8" style="left:10.07%;top:42.18%;width:46.17%;height:3.19%;" title="Jim eats healthy food and does some exercise every day."></div><div class="hot" data-src="audio/unit2/extend/extend_010.mp3" data-g="g9" style="left:58.16%;top:42.18%;width:28.51%;height:3.19%;" title="He is strong and healthy."></div><div class="hot" data-src="audio/unit2/extend/extend_011.mp3" data-g="g10" style="left:10.67%;top:44.96%;width:31.84%;height:3.07%;" title="Matt always eats too much."></div><div class="hot" data-src="audio/unit2/extend/extend_012.mp3" data-g="g11" style="left:44.43%;top:44.96%;width:31.29%;height:3.07%;" title="He never does any exercise."></div><div class="hot" data-src="audio/unit2/extend/extend_013.mp3" data-g="g12" style="left:77.64%;top:44.96%;width:9.51%;height:3.07%;" title="He is fat and not healthy."></div><div class="hot" data-src="audio/unit2/extend/extend_013.mp3" data-g="g12" style="left:10.19%;top:47.70%;width:18.76%;height:3.11%;" title="He is fat and not healthy."></div><div class="hot" data-src="audio/unit2/extend/extend_014.mp3" data-g="g13" style="left:18.41%;top:53.22%;width:28.03%;height:2.68%;" title="Don't eat too much junk food."></div><div class="hot" data-src="audio/unit2/extend/extend_014.mp3" data-g="g13" style="left:18.29%;top:55.44%;width:5.16%;height:2.77%;" title="Don't eat too much junk food."></div><div class="hot" data-src="audio/unit2/extend/extend_015.mp3" data-g="g14" style="left:25.25%;top:55.44%;width:25.24%;height:2.77%;" title="You are getting too fat."></div><div class="hot" data-src="audio/unit2/extend/extend_016.mp3" data-g="g15" style="left:18.72%;top:57.71%;width:32.44%;height:2.77%;" title="You should eat healthy food and do some exercise too."></div><div class="hot" data-src="audio/unit2/extend/extend_016.mp3" data-g="g15" style="left:18.41%;top:59.98%;width:28.69%;height:2.68%;" title="You should eat healthy food and do some exercise too."></div><div class="hot" data-src="audio/unit2/extend/extend_017.mp3" data-g="g16" style="left:58.83%;top:58.14%;width:24.45%;height:2.68%;" title="Thank you, but I love junk food."></div><div class="hot" data-src="audio/unit2/extend/extend_017.mp3" data-g="g16" style="left:58.70%;top:60.36%;width:10.97%;height:2.73%;" title="Thank you, but I love junk food."></div><div class="hot" data-src="audio/unit2/extend/extend_018.mp3" data-g="g17" style="left:11.58%;top:84.50%;width:31.11%;height:2.81%;" title="Matt eats more and more."></div><div class="hot" data-src="audio/unit2/extend/extend_019.mp3" data-g="g18" style="left:44.73%;top:84.50%;width:38.73%;height:2.81%;" title="He still does not do any exercise."></div><div class="hot" data-src="audio/unit2/extend/extend_020.mp3" data-g="g19" style="left:10.61%;top:87.23%;width:50.47%;height:2.69%;" title="Jim talks to him, but Matt does not listen."></div><div class="hot" data-src="audio/unit2/extra/p24_001.mp3" data-g="e2_29" style="left:37.39%;top:6.57%;width:41.85%;height:9.01%;" title="Jim and Matt"></div></div>
+    </div>
+
+    <div class="bookpage" data-color="#2eae6e">
+      <img class="pageimg" src="pages/page_025.png" alt="第25页" loading="lazy">
+      <div class="hotlayer"><div class="hot" data-src="audio/unit2/extend/extend_021.mp3" data-g="g20" style="left:14.54%;top:14.79%;width:18.95%;height:2.81%;" title="The cat is coming."></div><div class="hot" data-src="audio/unit2/extend/extend_022.mp3" data-g="g21" style="left:14.54%;top:17.27%;width:11.81%;height:2.47%;" title="Run, Matt."></div><div class="hot" data-src="audio/unit2/extend/extend_023.mp3" data-g="g22" style="left:28.09%;top:17.27%;width:3.77%;height:2.47%;" title="Run."></div><div class="hot" data-src="audio/unit2/extend/extend_024.mp3" data-g="g23" style="left:71.11%;top:13.42%;width:4.85%;height:2.47%;" title="Wow."></div><div class="hot" data-src="audio/unit2/extend/extend_025.mp3" data-g="g24" style="left:78.00%;top:13.42%;width:10.48%;height:2.47%;" title="Two little mice."></div><div class="hot" data-src="audio/unit2/extend/extend_025.mp3" data-g="g24" style="left:70.86%;top:15.65%;width:4.43%;height:2.89%;" title="Two little mice."></div><div class="hot" data-src="audio/unit2/extend/extend_026.mp3" data-g="g25" style="left:76.73%;top:15.65%;width:12.18%;height:2.89%;" title="I'm hungry."></div><div class="hot" data-src="audio/unit2/extend/extend_027.mp3" data-g="g26" style="left:36.93%;top:37.98%;width:14.65%;height:2.77%;" title="Don't eat me."></div><div class="hot" data-src="audio/unit2/extend/extend_028.mp3" data-g="g27" style="left:53.44%;top:37.98%;width:6.85%;height:2.77%;" title="Please."></div><div class="hot" data-src="audio/unit2/extend/extend_029.mp3" data-g="g28" style="left:37.05%;top:40.29%;width:4.73%;height:2.90%;" title="Help."></div><div class="hot" data-src="audio/unit2/extend/extend_030.mp3" data-g="g29" style="left:43.94%;top:40.29%;width:4.80%;height:2.90%;" title="Help."></div><div class="hot" data-src="audio/unit2/extend/extend_031.mp3" data-g="g30" style="left:14.36%;top:45.90%;width:50.17%;height:2.81%;" title="One day, Jim and Matt are in the kitchen."></div><div class="hot" data-src="audio/unit2/extend/extend_032.mp3" data-g="g31" style="left:66.57%;top:45.90%;width:14.11%;height:2.81%;" title="A cat comes."></div><div class="hot" data-src="audio/unit2/extend/extend_033.mp3" data-g="g32" style="left:13.76%;top:48.55%;width:40.72%;height:2.73%;" title="Jim runs into the hole in the wall."></div><div class="hot" data-src="audio/unit2/extend/extend_034.mp3" data-g="g33" style="left:55.98%;top:48.55%;width:18.53%;height:2.73%;" title="He is safe there."></div><div class="hot" data-src="audio/unit2/extend/extend_035.mp3" data-g="g34" style="left:16.78%;top:82.27%;width:59.85%;height:2.55%;" title="Matt runs to the hole too, but he cannot run fast."></div><div class="hot" data-src="audio/unit2/extend/extend_036.mp3" data-g="g35" style="left:78.85%;top:82.27%;width:6.00%;height:2.55%;" title="What happens next?"></div><div class="hot" data-src="audio/unit2/extend/extend_036.mp3" data-g="g35" style="left:16.05%;top:84.97%;width:16.65%;height:2.81%;" title="What happens next?"></div></div>
+    </div>
+<div class="pagetip">点一下书页上的句子，就能听到这一句的发音</div>
+</section>
+<section><h2>单词 Words <span class="badge">点单词听发音</span></h2><div class="words">
+<div class="word" data-src="audio/unit2/words/words_001.mp3">Do exercise.</div>
+<div class="word" data-src="audio/unit2/words/words_002.mp3">Eat healthy food.</div>
+<div class="word" data-src="audio/unit2/words/words_003.mp3">Drink a lot of water.</div>
+<div class="word" data-src="audio/unit2/words/words_004.mp3">Get enough sleep.</div>
+<div class="word" data-src="audio/unit2/words/words_005.mp3">Strong.</div>
+<div class="word" data-src="audio/unit2/words/words_006.mp3">What's there?</div>
+<div class="word" data-src="audio/unit2/words/words_007.mp3">About?</div>
+<div class="word" data-src="audio/unit2/words/words_008.mp3">Habit.</div>
+<div class="word" data-src="audio/unit2/words/words_009.mp3">Junk food.</div>
+<div class="word" data-src="audio/unit2/words/words_010.mp3">Must.</div>
+<div class="word" data-src="audio/unit2/words/words_011.mp3">Less.</div>
+<div class="word" data-src="audio/unit2/words/words_012.mp3">Hard.</div>
+<div class="word" data-src="audio/unit2/words/words_013.mp3">Try.</div>
+<div class="word" data-src="audio/unit2/words/words_014.mp3">Lie.</div>
+<div class="word" data-src="audio/unit2/words/words_015.mp3">Ill.</div>
+<div class="word" data-src="audio/unit2/words/words_016.mp3">A glass of meat too.</div>
+</div></section>
+  <a class="home" href="index.html">← 返回主页</a>
+</main>
+<script>
+var audio = new Audio();
+var currentGroup = null;
+function unlight(g) {
+  document.querySelectorAll('.hot[data-g="'+g+'"]').forEach(function(x){ x.classList.remove('playing'); });
+}
+function light(g) {
+  document.querySelectorAll('.hot[data-g="'+g+'"]').forEach(function(x){ x.classList.add('playing'); });
+}
+function play(el, src, g) {
+  if (currentGroup === g && !audio.paused) {
+    audio.pause();
+    unlight(g);
+    currentGroup = null;
+    return;
+  }
+  if (currentGroup) unlight(currentGroup);
+  currentGroup = g;
+  audio.src = src;
+  audio.play();
+  light(g);
+}
+audio.addEventListener('ended', function(){
+  if (currentGroup) { unlight(currentGroup); currentGroup = null; }
+});
+document.querySelectorAll('.hot').forEach(function(el){
+  el.addEventListener('click', function(){ play(this, this.dataset.src, this.dataset.g); });
+});
+document.querySelectorAll('.word').forEach(function(el){
+  el.addEventListener('click', function(){ play(this, this.dataset.src, this.dataset.g); });
+});
+</script>
+</body>
+</html>

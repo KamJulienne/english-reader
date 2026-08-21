@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unit 8 点读 · 音乐会带给我们什么感受</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:"PingFang SC","Microsoft YaHei",sans-serif; background:#f4f8fb; padding-bottom:60px; }
+  header { background:#5b6ee8; color:#fff; padding:20px 16px 24px; text-align:center; }
+  .back { display:inline-block; color:#fff; text-decoration:none; font-size:14px; opacity:.9; margin-bottom:6px; }
+  h1 { font-size:26px; letter-spacing:1px; }
+  .sub { font-size:13px; opacity:.92; margin-top:6px; }
+  .tip { font-size:13px; margin-top:10px; background:rgba(255,255,255,.22); display:inline-block; padding:4px 14px; border-radius:20px; }
+  main { max-width:860px; margin:0 auto; padding:16px; }
+  section { background:#fff; border-radius:18px; margin-top:16px; padding:16px; box-shadow:0 3px 10px rgba(0,0,0,.06); }
+  section h2 { font-size:20px; color:#333; display:flex; align-items:center; gap:8px; margin-bottom:6px; }
+  .badge { font-size:12px; color:#999; font-weight:normal; }
+  .bookpage { position:relative; width:100%; margin-top:12px; border-radius:10px; overflow:hidden; background:#eee; }
+  .pageimg { display:block; width:100%; height:auto; }
+  .hotlayer { position:absolute; inset:0; }
+  .hot { position:absolute; border-radius:4px; cursor:pointer; background:transparent; transition:background .12s; }
+  .hot:hover { background:rgba(255,193,7,.32); box-shadow:inset 0 0 0 2px rgba(255,140,0,.65); }
+  .hot.playing { background:rgba(255,140,0,.40); box-shadow:inset 0 0 0 2px #5b6ee8; }
+  .pagetip { font-size:13px; color:#999; text-align:center; margin-top:12px; }
+  .words { display:flex; flex-wrap:wrap; gap:10px; margin-top:12px; }
+  .word { padding:12px 18px; border-radius:14px; background:#f7f9fc; font-size:17px; color:#222; cursor:pointer; border:2px solid transparent; transition:all .12s; user-select:none; }
+  .word:active { transform:scale(.96); }
+  .word.playing { background:#5b6ee8; border-color:#5b6ee8; color:#fff; }
+  .empty { color:#999; font-size:15px; padding:10px 4px; }
+  .home { display:block; text-align:center; margin:24px auto 0; color:#666; text-decoration:none; font-size:15px; }
+</style>
+</head>
+<body>
+<header>
+  <a class="back" href="index.html">← 返回主页</a>
+  <h1>Unit 8 · 音乐会带给我们什么感受</h1>
+  <div class="sub">How does music make us feel?</div>
+  <div class="tip">点书页上的句子，听这一句的发音</div>
+</header>
+<main>
+<section><h2>单词 Words <span class="badge">点单词听发音</span></h2><div class="words">
+<div class="word" data-src="audio/unit8/words/words_001.mp3">Fast,</div>
+<div class="word" data-src="audio/unit8/words/words_002.mp3">Slow,</div>
+<div class="word" data-src="audio/unit8/words/words_003.mp3">Excited,</div>
+<div class="word" data-src="audio/unit8/words/words_004.mp3">Unhappy,</div>
+<div class="word" data-src="audio/unit8/words/words_005.mp3">Feel,</div>
+<div class="word" data-src="audio/unit8/words/words_006.mp3">Feeling,</div>
+<div class="word" data-src="audio/unit8/words/words_007.mp3">Relaxed,</div>
+<div class="word" data-src="audio/unit8/words/words_008.mp3">Person,</div>
+<div class="word" data-src="audio/unit8/words/words_009.mp3">Imagination,</div>
+<div class="word" data-src="audio/unit8/words/words_010.mp3">Imagine,</div>
+<div class="word" data-src="audio/unit8/words/words_011.mp3">All of the world.</div>
+</div></section>
+  <a class="home" href="index.html">← 返回主页</a>
+</main>
+<script>
+var audio = new Audio();
+var currentGroup = null;
+function unlight(g) {
+  document.querySelectorAll('.hot[data-g="'+g+'"]').forEach(function(x){ x.classList.remove('playing'); });
+}
+function light(g) {
+  document.querySelectorAll('.hot[data-g="'+g+'"]').forEach(function(x){ x.classList.add('playing'); });
+}
+function play(el, src, g) {
+  if (currentGroup === g && !audio.paused) {
+    audio.pause();
+    unlight(g);
+    currentGroup = null;
+    return;
+  }
+  if (currentGroup) unlight(currentGroup);
+  currentGroup = g;
+  audio.src = src;
+  audio.play();
+  light(g);
+}
+audio.addEventListener('ended', function(){
+  if (currentGroup) { unlight(currentGroup); currentGroup = null; }
+});
+document.querySelectorAll('.hot').forEach(function(el){
+  el.addEventListener('click', function(){ play(this, this.dataset.src, this.dataset.g); });
+});
+document.querySelectorAll('.word').forEach(function(el){
+  el.addEventListener('click', function(){ play(this, this.dataset.src, this.dataset.g); });
+});
+</script>
+</body>
+</html>
