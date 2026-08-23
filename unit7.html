@@ -40,23 +40,23 @@
 </header>
 <main>
 <section><h2>单词 Words <span class="badge">点单词听发音</span></h2><div class="words">
-<div class="word" data-src="audio/unit7/words/words_001.mp3">Aunt.</div>
-<div class="word" data-src="audio/unit7/words/words_002.mp3">Uncle.</div>
-<div class="word" data-src="audio/unit7/words/words_003.mp3">Together.</div>
-<div class="word" data-src="audio/unit7/words/words_004.mp3">Celebrate.</div>
-<div class="word" data-src="audio/unit7/words/words_005.mp3">Main.</div>
-<div class="word" data-src="audio/unit7/words/words_006.mp3">Eve.</div>
-<div class="word" data-src="audio/unit7/words/words_007.mp3">Stocking.</div>
-<div class="word" data-src="audio/unit7/words/words_008.mp3">Visit relatives.</div>
-<div class="word" data-src="audio/unit7/words/words_009.mp3">Eat mooncakes.</div>
-<div class="word" data-src="audio/unit7/words/words_010.mp3">Have a dragonbow race.</div>
-<div class="word" data-src="audio/unit7/words/words_011.mp3">Watch lanterns.</div>
-<div class="word" data-src="audio/unit7/words/words_012.mp3">Next month.</div>
-<div class="word" data-src="audio/unit7/words/words_013.mp3">Make jowzy.</div>
-<div class="word" data-src="audio/unit7/words/words_014.mp3">Watch a lion dance.</div>
-<div class="word" data-src="audio/unit7/words/words_015.mp3">Have a big meal.</div>
-<div class="word" data-src="audio/unit7/words/words_016.mp3">Put up.</div>
-<div class="word" data-src="audio/unit7/words/words_017.mp3">Have a big meal.</div>
+<div class="word" data-src="audio/unit7/words/words_001.mp3" data-g="w1">Aunt.</div>
+<div class="word" data-src="audio/unit7/words/words_002.mp3" data-g="w2">Uncle.</div>
+<div class="word" data-src="audio/unit7/words/words_003.mp3" data-g="w3">Together.</div>
+<div class="word" data-src="audio/unit7/words/words_004.mp3" data-g="w4">Celebrate.</div>
+<div class="word" data-src="audio/unit7/words/words_005.mp3" data-g="w5">Main.</div>
+<div class="word" data-src="audio/unit7/words/words_006.mp3" data-g="w6">Eve.</div>
+<div class="word" data-src="audio/unit7/words/words_007.mp3" data-g="w7">Stocking.</div>
+<div class="word" data-src="audio/unit7/words/words_008.mp3" data-g="w8">Visit relatives.</div>
+<div class="word" data-src="audio/unit7/words/words_009.mp3" data-g="w9">Eat mooncakes.</div>
+<div class="word" data-src="audio/unit7/words/words_010.mp3" data-g="w10">Have a dragonbow race.</div>
+<div class="word" data-src="audio/unit7/words/words_011.mp3" data-g="w11">Watch lanterns.</div>
+<div class="word" data-src="audio/unit7/words/words_012.mp3" data-g="w12">Next month.</div>
+<div class="word" data-src="audio/unit7/words/words_013.mp3" data-g="w13">Make jowzy.</div>
+<div class="word" data-src="audio/unit7/words/words_014.mp3" data-g="w14">Watch a lion dance.</div>
+<div class="word" data-src="audio/unit7/words/words_015.mp3" data-g="w15">Have a big meal.</div>
+<div class="word" data-src="audio/unit7/words/words_016.mp3" data-g="w16">Put up.</div>
+<div class="word" data-src="audio/unit7/words/words_017.mp3" data-g="w17">Have a big meal.</div>
 </div></section>
   <a class="home" href="index.html">← 返回主页</a>
 </main>
@@ -65,9 +65,11 @@ var audio = new Audio();
 var currentGroup = null;
 function unlight(g) {
   document.querySelectorAll('.hot[data-g="'+g+'"]').forEach(function(x){ x.classList.remove('playing'); });
+  document.querySelectorAll('.word[data-g="'+g+'"]').forEach(function(x){ x.classList.remove('playing'); });
 }
 function light(g) {
   document.querySelectorAll('.hot[data-g="'+g+'"]').forEach(function(x){ x.classList.add('playing'); });
+  document.querySelectorAll('.word[data-g="'+g+'"]').forEach(function(x){ x.classList.add('playing'); });
 }
 function play(el, src, g) {
   if (currentGroup === g && !audio.paused) {

@@ -66,19 +66,19 @@
 <div class="pagetip">点一下书页上的句子，就能听到这一句的发音</div>
 </section>
 <section><h2>单词 Words <span class="badge">点单词听发音</span></h2><div class="words">
-<div class="word" data-src="audio/unit5/words/words_001.mp3">Get sunlight.</div>
-<div class="word" data-src="audio/unit5/words/words_002.mp3">Get food and water.</div>
-<div class="word" data-src="audio/unit5/words/words_003.mp3">Grow.</div>
-<div class="word" data-src="audio/unit5/words/words_004.mp3">Change.</div>
-<div class="word" data-src="audio/unit5/words/words_005.mp3">Move.</div>
-<div class="word" data-src="audio/unit5/words/words_006.mp3">Living.</div>
-<div class="word" data-src="audio/unit5/words/words_007.mp3">Non-living.</div>
-<div class="word" data-src="audio/unit5/words/words_008.mp3">Thing.</div>
-<div class="word" data-src="audio/unit5/words/words_009.mp3">Air.</div>
-<div class="word" data-src="audio/unit5/words/words_010.mp3">By themselves.</div>
-<div class="word" data-src="audio/unit5/words/words_011.mp3">Important.</div>
-<div class="word" data-src="audio/unit5/words/words_012.mp3">By itself.</div>
-<div class="word" data-src="audio/unit5/words/words_013.mp3">Look around.</div>
+<div class="word" data-src="audio/unit5/words/words_001.mp3" data-g="w1">Get sunlight.</div>
+<div class="word" data-src="audio/unit5/words/words_002.mp3" data-g="w2">Get food and water.</div>
+<div class="word" data-src="audio/unit5/words/words_003.mp3" data-g="w3">Grow.</div>
+<div class="word" data-src="audio/unit5/words/words_004.mp3" data-g="w4">Change.</div>
+<div class="word" data-src="audio/unit5/words/words_005.mp3" data-g="w5">Move.</div>
+<div class="word" data-src="audio/unit5/words/words_006.mp3" data-g="w6">Living.</div>
+<div class="word" data-src="audio/unit5/words/words_007.mp3" data-g="w7">Non-living.</div>
+<div class="word" data-src="audio/unit5/words/words_008.mp3" data-g="w8">Thing.</div>
+<div class="word" data-src="audio/unit5/words/words_009.mp3" data-g="w9">Air.</div>
+<div class="word" data-src="audio/unit5/words/words_010.mp3" data-g="w10">By themselves.</div>
+<div class="word" data-src="audio/unit5/words/words_011.mp3" data-g="w11">Important.</div>
+<div class="word" data-src="audio/unit5/words/words_012.mp3" data-g="w12">By itself.</div>
+<div class="word" data-src="audio/unit5/words/words_013.mp3" data-g="w13">Look around.</div>
 </div></section>
   <a class="home" href="index.html">← 返回主页</a>
 </main>
@@ -87,9 +87,11 @@ var audio = new Audio();
 var currentGroup = null;
 function unlight(g) {
   document.querySelectorAll('.hot[data-g="'+g+'"]').forEach(function(x){ x.classList.remove('playing'); });
+  document.querySelectorAll('.word[data-g="'+g+'"]').forEach(function(x){ x.classList.remove('playing'); });
 }
 function light(g) {
   document.querySelectorAll('.hot[data-g="'+g+'"]').forEach(function(x){ x.classList.add('playing'); });
+  document.querySelectorAll('.word[data-g="'+g+'"]').forEach(function(x){ x.classList.add('playing'); });
 }
 function play(el, src, g) {
   if (currentGroup === g && !audio.paused) {

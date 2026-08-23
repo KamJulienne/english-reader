@@ -66,25 +66,25 @@
 <div class="pagetip">点一下书页上的句子，就能听到这一句的发音</div>
 </section>
 <section><h2>单词 Words <span class="badge">点单词听发音</span></h2><div class="words">
-<div class="word" data-src="audio/unit4/words/words_001.mp3">Mountain.</div>
-<div class="word" data-src="audio/unit4/words/words_002.mp3">Cave.</div>
-<div class="word" data-src="audio/unit4/words/words_003.mp3">Waterfall.</div>
-<div class="word" data-src="audio/unit4/words/words_004.mp3">Hotel.</div>
-<div class="word" data-src="audio/unit4/words/words_005.mp3">Holiday.</div>
-<div class="word" data-src="audio/unit4/words/words_006.mp3">Will.</div>
-<div class="word" data-src="audio/unit4/words/words_007.mp3">Soon.</div>
-<div class="word" data-src="audio/unit4/words/words_008.mp3">Shell.</div>
-<div class="word" data-src="audio/unit4/words/words_009.mp3">High-speed train.</div>
-<div class="word" data-src="audio/unit4/words/words_010.mp3">Explore.</div>
-<div class="word" data-src="audio/unit4/words/words_011.mp3">Pagoda.</div>
-<div class="word" data-src="audio/unit4/words/words_012.mp3">Stay.</div>
-<div class="word" data-src="audio/unit4/words/words_013.mp3">Cave House.</div>
-<div class="word" data-src="audio/unit4/words/words_014.mp3">Famous.</div>
-<div class="word" data-src="audio/unit4/words/words_015.mp3">Deep-fried cake.</div>
-<div class="word" data-src="audio/unit4/words/words_016.mp3">Wonderful.</div>
-<div class="word" data-src="audio/unit4/words/words_017.mp3">View.</div>
-<div class="word" data-src="audio/unit4/words/words_018.mp3">It sounds great.</div>
-<div class="word" data-src="audio/unit4/words/words_019.mp3">I can't wait to go.</div>
+<div class="word" data-src="audio/unit4/words/words_001.mp3" data-g="w1">Mountain.</div>
+<div class="word" data-src="audio/unit4/words/words_002.mp3" data-g="w2">Cave.</div>
+<div class="word" data-src="audio/unit4/words/words_003.mp3" data-g="w3">Waterfall.</div>
+<div class="word" data-src="audio/unit4/words/words_004.mp3" data-g="w4">Hotel.</div>
+<div class="word" data-src="audio/unit4/words/words_005.mp3" data-g="w5">Holiday.</div>
+<div class="word" data-src="audio/unit4/words/words_006.mp3" data-g="w6">Will.</div>
+<div class="word" data-src="audio/unit4/words/words_007.mp3" data-g="w7">Soon.</div>
+<div class="word" data-src="audio/unit4/words/words_008.mp3" data-g="w8">Shell.</div>
+<div class="word" data-src="audio/unit4/words/words_009.mp3" data-g="w9">High-speed train.</div>
+<div class="word" data-src="audio/unit4/words/words_010.mp3" data-g="w10">Explore.</div>
+<div class="word" data-src="audio/unit4/words/words_011.mp3" data-g="w11">Pagoda.</div>
+<div class="word" data-src="audio/unit4/words/words_012.mp3" data-g="w12">Stay.</div>
+<div class="word" data-src="audio/unit4/words/words_013.mp3" data-g="w13">Cave House.</div>
+<div class="word" data-src="audio/unit4/words/words_014.mp3" data-g="w14">Famous.</div>
+<div class="word" data-src="audio/unit4/words/words_015.mp3" data-g="w15">Deep-fried cake.</div>
+<div class="word" data-src="audio/unit4/words/words_016.mp3" data-g="w16">Wonderful.</div>
+<div class="word" data-src="audio/unit4/words/words_017.mp3" data-g="w17">View.</div>
+<div class="word" data-src="audio/unit4/words/words_018.mp3" data-g="w18">It sounds great.</div>
+<div class="word" data-src="audio/unit4/words/words_019.mp3" data-g="w19">I can't wait to go.</div>
 </div></section>
   <a class="home" href="index.html">← 返回主页</a>
 </main>
@@ -93,9 +93,11 @@ var audio = new Audio();
 var currentGroup = null;
 function unlight(g) {
   document.querySelectorAll('.hot[data-g="'+g+'"]').forEach(function(x){ x.classList.remove('playing'); });
+  document.querySelectorAll('.word[data-g="'+g+'"]').forEach(function(x){ x.classList.remove('playing'); });
 }
 function light(g) {
   document.querySelectorAll('.hot[data-g="'+g+'"]').forEach(function(x){ x.classList.add('playing'); });
+  document.querySelectorAll('.word[data-g="'+g+'"]').forEach(function(x){ x.classList.add('playing'); });
 }
 function play(el, src, g) {
   if (currentGroup === g && !audio.paused) {

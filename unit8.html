@@ -40,17 +40,17 @@
 </header>
 <main>
 <section><h2>单词 Words <span class="badge">点单词听发音</span></h2><div class="words">
-<div class="word" data-src="audio/unit8/words/words_001.mp3">Fast,</div>
-<div class="word" data-src="audio/unit8/words/words_002.mp3">Slow,</div>
-<div class="word" data-src="audio/unit8/words/words_003.mp3">Excited,</div>
-<div class="word" data-src="audio/unit8/words/words_004.mp3">Unhappy,</div>
-<div class="word" data-src="audio/unit8/words/words_005.mp3">Feel,</div>
-<div class="word" data-src="audio/unit8/words/words_006.mp3">Feeling,</div>
-<div class="word" data-src="audio/unit8/words/words_007.mp3">Relaxed,</div>
-<div class="word" data-src="audio/unit8/words/words_008.mp3">Person,</div>
-<div class="word" data-src="audio/unit8/words/words_009.mp3">Imagination,</div>
-<div class="word" data-src="audio/unit8/words/words_010.mp3">Imagine,</div>
-<div class="word" data-src="audio/unit8/words/words_011.mp3">All of the world.</div>
+<div class="word" data-src="audio/unit8/words/words_001.mp3" data-g="w1">Fast,</div>
+<div class="word" data-src="audio/unit8/words/words_002.mp3" data-g="w2">Slow,</div>
+<div class="word" data-src="audio/unit8/words/words_003.mp3" data-g="w3">Excited,</div>
+<div class="word" data-src="audio/unit8/words/words_004.mp3" data-g="w4">Unhappy,</div>
+<div class="word" data-src="audio/unit8/words/words_005.mp3" data-g="w5">Feel,</div>
+<div class="word" data-src="audio/unit8/words/words_006.mp3" data-g="w6">Feeling,</div>
+<div class="word" data-src="audio/unit8/words/words_007.mp3" data-g="w7">Relaxed,</div>
+<div class="word" data-src="audio/unit8/words/words_008.mp3" data-g="w8">Person,</div>
+<div class="word" data-src="audio/unit8/words/words_009.mp3" data-g="w9">Imagination,</div>
+<div class="word" data-src="audio/unit8/words/words_010.mp3" data-g="w10">Imagine,</div>
+<div class="word" data-src="audio/unit8/words/words_011.mp3" data-g="w11">All of the world.</div>
 </div></section>
   <a class="home" href="index.html">← 返回主页</a>
 </main>
@@ -59,9 +59,11 @@ var audio = new Audio();
 var currentGroup = null;
 function unlight(g) {
   document.querySelectorAll('.hot[data-g="'+g+'"]').forEach(function(x){ x.classList.remove('playing'); });
+  document.querySelectorAll('.word[data-g="'+g+'"]').forEach(function(x){ x.classList.remove('playing'); });
 }
 function light(g) {
   document.querySelectorAll('.hot[data-g="'+g+'"]').forEach(function(x){ x.classList.add('playing'); });
+  document.querySelectorAll('.word[data-g="'+g+'"]').forEach(function(x){ x.classList.add('playing'); });
 }
 function play(el, src, g) {
   if (currentGroup === g && !audio.paused) {

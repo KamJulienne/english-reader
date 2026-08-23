@@ -66,22 +66,22 @@
 <div class="pagetip">点一下书页上的句子，就能听到这一句的发音</div>
 </section>
 <section><h2>单词 Words <span class="badge">点单词听发音</span></h2><div class="words">
-<div class="word" data-src="audio/unit2/words/words_001.mp3">Do exercise.</div>
-<div class="word" data-src="audio/unit2/words/words_002.mp3">Eat healthy food.</div>
-<div class="word" data-src="audio/unit2/words/words_003.mp3">Drink a lot of water.</div>
-<div class="word" data-src="audio/unit2/words/words_004.mp3">Get enough sleep.</div>
-<div class="word" data-src="audio/unit2/words/words_005.mp3">Strong.</div>
-<div class="word" data-src="audio/unit2/words/words_006.mp3">What's there?</div>
-<div class="word" data-src="audio/unit2/words/words_007.mp3">About?</div>
-<div class="word" data-src="audio/unit2/words/words_008.mp3">Habit.</div>
-<div class="word" data-src="audio/unit2/words/words_009.mp3">Junk food.</div>
-<div class="word" data-src="audio/unit2/words/words_010.mp3">Must.</div>
-<div class="word" data-src="audio/unit2/words/words_011.mp3">Less.</div>
-<div class="word" data-src="audio/unit2/words/words_012.mp3">Hard.</div>
-<div class="word" data-src="audio/unit2/words/words_013.mp3">Try.</div>
-<div class="word" data-src="audio/unit2/words/words_014.mp3">Lie.</div>
-<div class="word" data-src="audio/unit2/words/words_015.mp3">Ill.</div>
-<div class="word" data-src="audio/unit2/words/words_016.mp3">A glass of meat too.</div>
+<div class="word" data-src="audio/unit2/words/words_001.mp3" data-g="w1">Do exercise.</div>
+<div class="word" data-src="audio/unit2/words/words_002.mp3" data-g="w2">Eat healthy food.</div>
+<div class="word" data-src="audio/unit2/words/words_003.mp3" data-g="w3">Drink a lot of water.</div>
+<div class="word" data-src="audio/unit2/words/words_004.mp3" data-g="w4">Get enough sleep.</div>
+<div class="word" data-src="audio/unit2/words/words_005.mp3" data-g="w5">Strong.</div>
+<div class="word" data-src="audio/unit2/words/words_006.mp3" data-g="w6">What's there?</div>
+<div class="word" data-src="audio/unit2/words/words_007.mp3" data-g="w7">About?</div>
+<div class="word" data-src="audio/unit2/words/words_008.mp3" data-g="w8">Habit.</div>
+<div class="word" data-src="audio/unit2/words/words_009.mp3" data-g="w9">Junk food.</div>
+<div class="word" data-src="audio/unit2/words/words_010.mp3" data-g="w10">Must.</div>
+<div class="word" data-src="audio/unit2/words/words_011.mp3" data-g="w11">Less.</div>
+<div class="word" data-src="audio/unit2/words/words_012.mp3" data-g="w12">Hard.</div>
+<div class="word" data-src="audio/unit2/words/words_013.mp3" data-g="w13">Try.</div>
+<div class="word" data-src="audio/unit2/words/words_014.mp3" data-g="w14">Lie.</div>
+<div class="word" data-src="audio/unit2/words/words_015.mp3" data-g="w15">Ill.</div>
+<div class="word" data-src="audio/unit2/words/words_016.mp3" data-g="w16">A glass of meat too.</div>
 </div></section>
   <a class="home" href="index.html">← 返回主页</a>
 </main>
@@ -90,9 +90,11 @@ var audio = new Audio();
 var currentGroup = null;
 function unlight(g) {
   document.querySelectorAll('.hot[data-g="'+g+'"]').forEach(function(x){ x.classList.remove('playing'); });
+  document.querySelectorAll('.word[data-g="'+g+'"]').forEach(function(x){ x.classList.remove('playing'); });
 }
 function light(g) {
   document.querySelectorAll('.hot[data-g="'+g+'"]').forEach(function(x){ x.classList.add('playing'); });
+  document.querySelectorAll('.word[data-g="'+g+'"]').forEach(function(x){ x.classList.add('playing'); });
 }
 function play(el, src, g) {
   if (currentGroup === g && !audio.paused) {

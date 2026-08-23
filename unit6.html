@@ -40,22 +40,22 @@
 </header>
 <main>
 <section><h2>单词 Words <span class="badge">点单词听发音</span></h2><div class="words">
-<div class="word" data-src="audio/unit6/words/words_001.mp3">Smoke,</div>
-<div class="word" data-src="audio/unit6/words/words_002.mp3">Dirty,</div>
-<div class="word" data-src="audio/unit6/words/words_003.mp3">Rubbish,</div>
-<div class="word" data-src="audio/unit6/words/words_004.mp3">Recycle,</div>
-<div class="word" data-src="audio/unit6/words/words_005.mp3">Reduce,</div>
-<div class="word" data-src="audio/unit6/words/words_006.mp3">Natural Resources,</div>
-<div class="word" data-src="audio/unit6/words/words_007.mp3">Call,</div>
-<div class="word" data-src="audio/unit6/words/words_008.mp3">Wood,</div>
-<div class="word" data-src="audio/unit6/words/words_009.mp3">Land,</div>
-<div class="word" data-src="audio/unit6/words/words_010.mp3">Why,</div>
-<div class="word" data-src="audio/unit6/words/words_011.mp3">Clean,</div>
-<div class="word" data-src="audio/unit6/words/words_012.mp3">Burt,</div>
-<div class="word" data-src="audio/unit6/words/words_013.mp3">Factory,</div>
-<div class="word" data-src="audio/unit6/words/words_014.mp3">Near,</div>
-<div class="word" data-src="audio/unit6/words/words_015.mp3">Those,</div>
-<div class="word" data-src="audio/unit6/words/words_016.mp3">Turn Off.</div>
+<div class="word" data-src="audio/unit6/words/words_001.mp3" data-g="w1">Smoke,</div>
+<div class="word" data-src="audio/unit6/words/words_002.mp3" data-g="w2">Dirty,</div>
+<div class="word" data-src="audio/unit6/words/words_003.mp3" data-g="w3">Rubbish,</div>
+<div class="word" data-src="audio/unit6/words/words_004.mp3" data-g="w4">Recycle,</div>
+<div class="word" data-src="audio/unit6/words/words_005.mp3" data-g="w5">Reduce,</div>
+<div class="word" data-src="audio/unit6/words/words_006.mp3" data-g="w6">Natural Resources,</div>
+<div class="word" data-src="audio/unit6/words/words_007.mp3" data-g="w7">Call,</div>
+<div class="word" data-src="audio/unit6/words/words_008.mp3" data-g="w8">Wood,</div>
+<div class="word" data-src="audio/unit6/words/words_009.mp3" data-g="w9">Land,</div>
+<div class="word" data-src="audio/unit6/words/words_010.mp3" data-g="w10">Why,</div>
+<div class="word" data-src="audio/unit6/words/words_011.mp3" data-g="w11">Clean,</div>
+<div class="word" data-src="audio/unit6/words/words_012.mp3" data-g="w12">Burt,</div>
+<div class="word" data-src="audio/unit6/words/words_013.mp3" data-g="w13">Factory,</div>
+<div class="word" data-src="audio/unit6/words/words_014.mp3" data-g="w14">Near,</div>
+<div class="word" data-src="audio/unit6/words/words_015.mp3" data-g="w15">Those,</div>
+<div class="word" data-src="audio/unit6/words/words_016.mp3" data-g="w16">Turn Off.</div>
 </div></section>
   <a class="home" href="index.html">← 返回主页</a>
 </main>
@@ -64,9 +64,11 @@ var audio = new Audio();
 var currentGroup = null;
 function unlight(g) {
   document.querySelectorAll('.hot[data-g="'+g+'"]').forEach(function(x){ x.classList.remove('playing'); });
+  document.querySelectorAll('.word[data-g="'+g+'"]').forEach(function(x){ x.classList.remove('playing'); });
 }
 function light(g) {
   document.querySelectorAll('.hot[data-g="'+g+'"]').forEach(function(x){ x.classList.add('playing'); });
+  document.querySelectorAll('.word[data-g="'+g+'"]').forEach(function(x){ x.classList.add('playing'); });
 }
 function play(el, src, g) {
   if (currentGroup === g && !audio.paused) {
